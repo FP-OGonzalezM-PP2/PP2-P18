@@ -15,16 +15,15 @@ public class PP2P18 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         int a,b,c,d,e;
         //Con un solo metodo puedo obtener las 3 variables
         a = pedirNumero();    
         b = pedirNumero();
         c = pedirNumero();
         d = mayor(a,b,c);
-        //Me es más facil usar variables con letras en orden de 
         e = minimo(a,b,c,d);
         Mostrar(e);
+        //Reutilize los metodos de los ultimos problemas
     }
     public static int pedirNumero(){
         int n;
@@ -46,7 +45,7 @@ public class PP2P18 {
     }
     public static int minimo (int a, int b, int c, int d){
         int e = 0,i;
-        //La letra c es el numero más alto entr a y b
+        //La letra d es el numero más alto entre a y b y c
         for (i=d;i<=d;i--){
             if (a%i==0 && b%i==0 && c%i==0)
                 e = i;
