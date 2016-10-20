@@ -46,15 +46,16 @@ public class PP2P18 {
     public static int minimo (int a, int b, int c, int d){
         int e = 0,i;
         //La letra d es el numero más alto entre a y b y c
-        for (i=d;i<=d;i--){
-            if (a%i==0 && b%i==0 && c%i==0)
+        for (i=d;i<=d && i>1;i--){
+            if (a%i==0 && b%i==0 && c%i==0){
                 e = i;
             //Se guarda en la variable i solo si es divisible entro los 3 números
+    }
         }
         return e;
     }
     public static void Mostrar(int e){
-        System.out.println("El número más alto de los 3 es " +e);
+        System.out.println("El minimo divisor de los 3 es " +e);
     }
     
 }
